@@ -1,2 +1,2 @@
 # streamlit-paywall-basic-example
-Example of creating a streamlit app with a paywall to access it.
+Example of creating a streamlit app with a basic paywall to access it.
