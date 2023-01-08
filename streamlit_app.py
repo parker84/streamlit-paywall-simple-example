@@ -2,6 +2,8 @@ import streamlit as st
 from decouple import config
 from PIL import Image
 
+st.set_page_config(page_icon='⚔️', page_title='Streamlit Paywall Example')
+
 st.markdown('## Chat with Tyrion Lannister ⚔️')
 col1, col2 = st.columns((2,1))
 with col1:
@@ -11,15 +13,15 @@ with col1:
         - Office Politics
         - War Strategy
         - The Targaryens
+
+
+        #### [Sign Up Now 🤘🏻](config('STRIPE_CHECKOUT_LINK'))
         """
     )
 with col2:
     image = Image.open('./assets/DALL·E 2023-01-08 17.53.04 - futuristic knight robot on a horse in cyberpunk theme.png')
     st.image(image)
 
-signup = st.button('Sign Up Now 🤘🏻')
-if signup:
-    st.markdown(config('STRIPE_CHECKOUT_LINK'), unsafe_allow_html=True)
 
 st.markdown('### Already have an Account? Login Below👇🏻')
 with st.form("login_form"):
