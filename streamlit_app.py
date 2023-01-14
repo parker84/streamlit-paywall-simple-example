@@ -8,14 +8,14 @@ st.markdown('## Chat with Tyrion Lannister ⚔️')
 col1, col2 = st.columns((2,1))
 with col1:
     st.markdown(
-        """
+        f"""
         Chat with Tyrion Lannister to advise you on:
         - Office Politics
         - War Strategy
         - The Targaryens
 
 
-        #### [Sign Up Now 🤘🏻](config('STRIPE_CHECKOUT_LINK'))
+        #### [Sign Up Now 🤘🏻]({config('STRIPE_CHECKOUT_LINK')})
         """
     )
 with col2:
