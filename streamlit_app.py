@@ -2,7 +2,7 @@ import streamlit as st
 from decouple import config
 from PIL import Image
 
-st.set_page_config(page_icon='⚔️', page_title='Streamlit Paywall Example')
+st.set_page_config(page_icon='🗡', page_title='Streamlit Paywall Example')
 
 st.markdown('## Chat with Tyrion Lannister ⚔️')
 col1, col2 = st.columns((2,1))
